@@ -1,3 +1,8 @@
-discord.py
-python-dotenv
-Flask
+# Python 3.10+ 권장
+discord.py>=2.3,<3
+aiosqlite>=0.19,<1
+matplotlib>=3.7,<4
+
+# (선택) 운영 편의
+python-dotenv>=1.0,<2    # .env로 토큰 관리할 때
+uvloop>=0.19,<1 ; sys_platform != "win32"  # 리눅스/맥에서 이벤트루프 가속
